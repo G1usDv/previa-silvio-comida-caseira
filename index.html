@@ -8,7 +8,7 @@
     <meta property="og:description" content="Uma ideia de página oficial para transformar visitas do Instagram em pedidos e visitas ao restaurante." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://g1usdv.github.io/previa-silvio-comida-caseira/" />
-    <meta property="og:image" content="https://g1usdv.github.io/previa-silvio-comida-caseira/assets/hero-picanha.png" />
+    <meta property="og:image" content="https://g1usdv.github.io/previa-silvio-comida-caseira/assets/silvio-picanha-1.png" />
     <title>Prévia | Comida Caseira do Silvio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -17,7 +17,7 @@
 
     <header class="site-header" id="topo">
       <a class="brand" href="#topo" aria-label="Voltar ao início">
-        <span class="brand-mark"><i></i><b>S</b></span>
+        <span class="brand-mark"><img src="assets/silvio-logo.png" alt="" /></span>
         <span class="brand-text"><strong>COMIDA CASEIRA</strong><small>DO SÍLVIO • ARACAJU</small></span>
       </a>
 
@@ -32,19 +32,25 @@
         <a href="#encontrar">Localização</a>
       </nav>
 
-      <a class="button button-header" href="https://wa.me/5579981131906" target="_blank" rel="noreferrer">Pedir agora <span>↗</span></a>
+      <button class="button button-header js-order" type="button">Montar pedido <span>→</span></button>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-image" role="img" aria-label="Prato ilustrativo de comida caseira e picanha na brasa"></div>
+        <div class="hero-texture" aria-hidden="true"></div>
         <div class="hero-shade"></div>
+        <div class="hero-collage" aria-label="Fotos reais do perfil da Comida Caseira do Silvio">
+          <div class="collage-logo"><img src="assets/silvio-logo.png" alt="Logotipo da Comida Caseira do Silvio" /></div>
+          <figure class="collage-photo photo-main"><img src="assets/silvio-picanha-1.png" alt="Foto de picanha do perfil da Comida Caseira do Silvio" /></figure>
+          <figure class="collage-photo photo-cut"><img src="assets/silvio-picanha-2.png" alt="Foto de carne na brasa do perfil da Comida Caseira do Silvio" /></figure>
+          <span class="collage-line line-one"></span><span class="collage-line line-two"></span>
+        </div>
         <div class="hero-content">
           <p class="eyebrow light">ARACAJU SERVIDA COM VERDADE</p>
           <h1 id="hero-title">A comida que faz<br />a cidade <em>voltar.</em></h1>
           <p class="hero-copy">Pratos com sabor de casa, churrasco no ponto e uma mesa que já faz parte da rotina de Aracaju.</p>
           <div class="hero-actions">
-            <button class="button button-primary js-order">Escolher meu pedido <span>→</span></button>
+            <button class="button button-primary js-order">Montar meu pedido <span>→</span></button>
             <a class="text-link light" href="#sabores">Conhecer a casa <span>↓</span></a>
           </div>
         </div>
@@ -76,7 +82,7 @@
       <section class="flavor-section" id="sabores" aria-labelledby="flavors-title">
         <div class="section-head">
           <div><p class="eyebrow">ESCOLHAS PARA O SEU DIA</p><h2 id="flavors-title">Da churrasqueira<br />para sua mesa.</h2></div>
-          <p class="caption">IMAGENS ILUSTRATIVAS<br />PARA ESTA PRÉVIA</p>
+          <p class="caption">FOTOS REAIS DO PERFIL<br />@SILVIOCOMIDACASEIRA</p>
         </div>
 
         <div class="flavor-grid">
@@ -122,18 +128,37 @@
       </section>
     </main>
 
-    <footer><a class="brand footer-brand" href="#topo"><span class="brand-mark"><i></i><b>S</b></span><span class="brand-text"><strong>COMIDA CASEIRA</strong><small>DO SÍLVIO • ARACAJU</small></span></a><p>PRÉVIA CONCEITUAL NÃO OFICIAL<br />CRIADA POR GUSTAVO, DESENVOLVEDOR WEB</p><a href="#topo">VOLTAR AO TOPO ↑</a></footer>
+    <footer><a class="brand footer-brand" href="#topo"><span class="brand-mark"><img src="assets/silvio-logo.png" alt="" /></span><span class="brand-text"><strong>COMIDA CASEIRA</strong><small>DO SÍLVIO • ARACAJU</small></span></a><p>PRÉVIA CONCEITUAL NÃO OFICIAL<br />CRIADA POR GUSTAVO, DESENVOLVEDOR WEB</p><a href="#topo">VOLTAR AO TOPO ↑</a></footer>
 
     <a class="whatsapp-float" href="https://wa.me/5579981131906" target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp"><span>⌕</span><b>Falar no WhatsApp</b></a>
 
     <dialog class="order-modal" aria-labelledby="modal-title">
       <button class="modal-close" type="button" aria-label="Fechar">×</button>
-      <p class="eyebrow">ESCOLHA O MELHOR CAMINHO</p>
-      <h2 id="modal-title">Como você quer pedir?</h2>
-      <p>Uma experiência simples para levar quem chega pelo Instagram ao canal de atendimento certo.</p>
-      <a class="modal-choice" href="https://wa.me/5579981131906" target="_blank" rel="noreferrer"><span><small>ATENDIMENTO DIRETO</small><strong>Falar no WhatsApp</strong></span><i>↗</i></a>
-      <a class="modal-choice muted-choice" href="https://wa.me/5579981131906" target="_blank" rel="noreferrer"><span><small>DELIVERY</small><strong>Escolher opções de entrega</strong></span><i>↗</i></a>
-      <small class="modal-note">O canal de delivery definitivo pode ser integrado nesta área.</small>
+      <div class="order-step step-menu">
+        <p class="eyebrow">SEU PEDIDO, NO SEU RITMO</p>
+        <h2 id="modal-title">Monte seu pedido.</h2>
+        <p>Esta é uma demonstração do pedido acontecendo dentro do próprio site. Cardápio, preços e disponibilidade seriam definidos pela equipe.</p>
+        <div class="order-items" aria-label="Itens demonstrativos">
+          <div class="order-item"><span><small>SELEÇÃO DO DIA</small><strong>Quentinha</strong></span><div class="quantity"><button type="button" data-item="quentinha" data-change="-1" aria-label="Remover quentinha">−</button><b data-count="quentinha">0</b><button type="button" data-item="quentinha" data-change="1" aria-label="Adicionar quentinha">+</button></div></div>
+          <div class="order-item"><span><small>NA BRASA</small><strong>Churrasco</strong></span><div class="quantity"><button type="button" data-item="churrasco" data-change="-1" aria-label="Remover churrasco">−</button><b data-count="churrasco">0</b><button type="button" data-item="churrasco" data-change="1" aria-label="Adicionar churrasco">+</button></div></div>
+          <div class="order-item"><span><small>PARA FINALIZAR</small><strong>Sobremesas</strong></span><div class="quantity"><button type="button" data-item="sobremesa" data-change="-1" aria-label="Remover sobremesa">−</button><b data-count="sobremesa">0</b><button type="button" data-item="sobremesa" data-change="1" aria-label="Adicionar sobremesa">+</button></div></div>
+        </div>
+        <div class="cart-summary"><span><b data-cart-count>0</b> item(ns) no pedido</span><button class="button button-primary js-checkout" type="button">Continuar <span>→</span></button></div>
+      </div>
+      <form class="order-step step-checkout" id="checkout-form">
+        <button class="back-step" type="button">← Voltar ao pedido</button>
+        <p class="eyebrow">QUASE LÁ</p>
+        <h2>Seus dados.</h2>
+        <p>Na versão final, essa etapa pode receber endereço, forma de pagamento e confirmação automática.</p>
+        <label>Seu nome<input required name="nome" placeholder="Como podemos te chamar?" /></label>
+        <label>Telefone para contato<input required name="telefone" placeholder="(79) 00000-0000" /></label>
+        <label class="delivery-choice">Como prefere receber?<span><input checked type="radio" name="recebimento" value="Delivery" /> Delivery</span><span><input type="radio" name="recebimento" value="Retirada" /> Retirada</span></label>
+        <button class="button button-primary checkout-submit" type="submit">Confirmar pedido <span>→</span></button>
+      </form>
+      <div class="order-step step-success">
+        <p class="eyebrow">PEDIDO RECEBIDO</p><h2>Pronto.<br />Agora é só esperar o sabor.</h2><p>Esta confirmação é uma demonstração visual. No produto final, o pedido seria enviado para o painel da equipe, impresso ou integrado ao pagamento.</p><button class="button button-primary js-close-success" type="button">Voltar ao site <span>→</span></button>
+      </div>
+      <small class="modal-note">Fluxo demonstrativo. Não envia pedidos reais nesta prévia.</small>
     </dialog>
 
     <script src="site.js"></script>
