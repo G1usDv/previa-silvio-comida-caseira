@@ -27,17 +27,19 @@
 
       <nav class="main-nav" aria-label="Navegação principal">
         <a href="#sabores">Sabores</a>
+        <a href="cardapio.html">Cardápio</a>
         <a href="#experiencia">A casa</a>
         <a href="#horarios">Horários</a>
         <a href="#encontrar">Localização</a>
       </nav>
 
-      <button class="button button-header js-order" type="button">Montar pedido <span>→</span></button>
+      <button class="button button-header js-order" type="button">Escolher como pedir <span>→</span></button>
     </header>
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-texture" aria-hidden="true"></div>
+        <div class="hero-food-background" aria-hidden="true"></div>
         <div class="hero-shade"></div>
         <div class="hero-collage" aria-label="Fotos reais do perfil da Comida Caseira do Silvio">
           <div class="collage-logo"><img src="assets/silvio-logo.png" alt="Logotipo da Comida Caseira do Silvio" /></div>
@@ -50,7 +52,7 @@
           <h1 id="hero-title">A comida que faz<br />a cidade <em>voltar.</em></h1>
           <p class="hero-copy">Pratos com sabor de casa, churrasco no ponto e uma mesa que já faz parte da rotina de Aracaju.</p>
           <div class="hero-actions">
-            <button class="button button-primary js-order">Montar meu pedido <span>→</span></button>
+            <button class="button button-primary js-order">Escolher como pedir <span>→</span></button>
             <a class="text-link light" href="#sabores">Conhecer a casa <span>↓</span></a>
           </div>
         </div>
@@ -134,31 +136,15 @@
 
     <dialog class="order-modal" aria-labelledby="modal-title">
       <button class="modal-close" type="button" aria-label="Fechar">×</button>
-      <div class="order-step step-menu">
-        <p class="eyebrow">SEU PEDIDO, NO SEU RITMO</p>
-        <h2 id="modal-title">Monte seu pedido.</h2>
-        <p>Esta é uma demonstração do pedido acontecendo dentro do próprio site. Cardápio, preços e disponibilidade seriam definidos pela equipe.</p>
-        <div class="order-items" aria-label="Itens demonstrativos">
-          <div class="order-item"><span><small>SELEÇÃO DO DIA</small><strong>Quentinha</strong></span><div class="quantity"><button type="button" data-item="quentinha" data-change="-1" aria-label="Remover quentinha">−</button><b data-count="quentinha">0</b><button type="button" data-item="quentinha" data-change="1" aria-label="Adicionar quentinha">+</button></div></div>
-          <div class="order-item"><span><small>NA BRASA</small><strong>Churrasco</strong></span><div class="quantity"><button type="button" data-item="churrasco" data-change="-1" aria-label="Remover churrasco">−</button><b data-count="churrasco">0</b><button type="button" data-item="churrasco" data-change="1" aria-label="Adicionar churrasco">+</button></div></div>
-          <div class="order-item"><span><small>PARA FINALIZAR</small><strong>Sobremesas</strong></span><div class="quantity"><button type="button" data-item="sobremesa" data-change="-1" aria-label="Remover sobremesa">−</button><b data-count="sobremesa">0</b><button type="button" data-item="sobremesa" data-change="1" aria-label="Adicionar sobremesa">+</button></div></div>
-        </div>
-        <div class="cart-summary"><span><b data-cart-count>0</b> item(ns) no pedido</span><button class="button button-primary js-checkout" type="button">Continuar <span>→</span></button></div>
+      <p class="eyebrow">SEU PEDIDO, NO SEU RITMO</p>
+      <h2 id="modal-title">Como prefere pedir?</h2>
+      <p class="order-choice-copy">Cada cliente escolhe o caminho mais confortável. O site não substitui os canais existentes, ele organiza todos em um lugar só.</p>
+      <div class="order-choices" aria-label="Opções para fazer pedido">
+        <a class="modal-choice modal-choice-site" href="cardapio.html"><span><small>EXPERIÊNCIA COMPLETA</small><strong>Pedir pelo site</strong><em>Cardápio, carrinho e checkout</em></span><i>→</i></a>
+        <a class="modal-choice" href="https://wa.me/5579981131906?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noreferrer"><span><small>ATENDIMENTO DIRETO</small><strong>Pedir no WhatsApp</strong><em>Falar agora com a equipe</em></span><i>↗</i></a>
+        <a class="modal-choice muted-choice" href="https://www.ifood.com.br/" target="_blank" rel="noreferrer"><span><small>APLICATIVO PARCEIRO</small><strong>Pedir pelo iFood</strong><em>Abrir o iFood para pedir</em></span><i>↗</i></a>
       </div>
-      <form class="order-step step-checkout" id="checkout-form">
-        <button class="back-step" type="button">← Voltar ao pedido</button>
-        <p class="eyebrow">QUASE LÁ</p>
-        <h2>Seus dados.</h2>
-        <p>Na versão final, essa etapa pode receber endereço, forma de pagamento e confirmação automática.</p>
-        <label>Seu nome<input required name="nome" placeholder="Como podemos te chamar?" /></label>
-        <label>Telefone para contato<input required name="telefone" placeholder="(79) 00000-0000" /></label>
-        <label class="delivery-choice">Como prefere receber?<span><input checked type="radio" name="recebimento" value="Delivery" /> Delivery</span><span><input type="radio" name="recebimento" value="Retirada" /> Retirada</span></label>
-        <button class="button button-primary checkout-submit" type="submit">Confirmar pedido <span>→</span></button>
-      </form>
-      <div class="order-step step-success">
-        <p class="eyebrow">PEDIDO RECEBIDO</p><h2>Pronto.<br />Agora é só esperar o sabor.</h2><p>Esta confirmação é uma demonstração visual. No produto final, o pedido seria enviado para o painel da equipe, impresso ou integrado ao pagamento.</p><button class="button button-primary js-close-success" type="button">Voltar ao site <span>→</span></button>
-      </div>
-      <small class="modal-note">Fluxo demonstrativo. Não envia pedidos reais nesta prévia.</small>
+      <small class="modal-note">Prévia visual. O link final do iFood seria conectado à página oficial do restaurante.</small>
     </dialog>
 
     <script src="site.js"></script>

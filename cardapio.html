@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Cardápio demonstrativo da Comida Caseira do Sílvio." />
+    <title>Cardápio | Comida Caseira do Sílvio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="menu-page">
+    <div class="preview-ribbon">PRÉVIA VISUAL NÃO OFICIAL <span>•</span> CARDÁPIO E PEDIDO PELO SITE</div>
+
+    <header class="site-header menu-header" id="topo">
+      <a class="brand" href="index.html" aria-label="Voltar à página inicial">
+        <span class="brand-mark"><img src="assets/silvio-logo.png" alt="" /></span>
+        <span class="brand-text"><strong>COMIDA CASEIRA</strong><small>DO SÍLVIO • ARACAJU</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html#sabores">Sabores</a>
+        <a class="is-active" href="cardapio.html">Cardápio</a>
+        <a href="index.html#experiencia">A casa</a>
+        <a href="index.html#horarios">Horários</a>
+      </nav>
+      <button class="cart-trigger" type="button" data-cart-toggle aria-controls="cart-drawer" aria-expanded="false">Meu carrinho <b data-cart-total-count>0</b><span>→</span></button>
+    </header>
+
+    <main>
+      <section class="menu-intro">
+        <div>
+          <p class="eyebrow">CARDÁPIO DIGITAL</p>
+          <h1>Escolha o sabor.<br />O pedido começa <em>aqui.</em></h1>
+        </div>
+        <p>Uma prévia de como o cliente pode montar o pedido sem sair do site, com os mesmos itens, informações e atendimento da casa.</p>
+      </section>
+
+      <section class="menu-content" aria-labelledby="menu-title">
+        <div class="menu-bar">
+          <div><p class="eyebrow">QUENTINHAS E CHURRASCO</p><h2 id="menu-title">Pratos para hoje.</h2></div>
+          <p><b>6 itens demonstrativos</b><br />Valores de referência do cardápio</p>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <img src="assets/silvio-picanha-1-enhanced.png" alt="Quentinha de filé" />
+            <div class="product-info"><p class="product-tag">PRATO COMPLETO</p><h3>Quentinha<br />Filé</h3><p>Filé na chapa e acompanhamentos do dia.</p><div><strong>R$ 70,00</strong><button type="button" data-add data-product-id="file" data-product-name="Quentinha - Filé" data-product-price="70">Adicionar <span>+</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/silvio-quentinha-original.png" alt="Quentinha grande de carne mista" />
+            <div class="product-info"><p class="product-tag">TAMANHO G</p><h3>Quentinha G<br />Carne Mista</h3><p>Carne mista e acompanhamentos do dia.</p><div><strong>R$ 48,00</strong><button type="button" data-add data-product-id="mista-g" data-product-name="Quentinha G - Carne Mista" data-product-price="48">Adicionar <span>+</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/silvio-picanha-2-enhanced.png" alt="Quentinha média de carne de boi" />
+            <div class="product-info"><p class="product-tag">TAMANHO M</p><h3>Quentinha M<br />Carne de Boi</h3><p>Carne de boi e acompanhamentos do dia.</p><div><strong>R$ 42,00</strong><button type="button" data-add data-product-id="boi-m" data-product-name="Quentinha M - Carne de Boi" data-product-price="42">Adicionar <span>+</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/silvio-quentinha-original.png" alt="Quentinha média de carne mista" />
+            <div class="product-info"><p class="product-tag">TAMANHO M</p><h3>Quentinha M<br />Carne Mista</h3><p>Carne mista e acompanhamentos do dia.</p><div><strong>R$ 40,00</strong><button type="button" data-add data-product-id="mista-m" data-product-name="Quentinha M - Carne Mista" data-product-price="40">Adicionar <span>+</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/silvio-picanha-1-enhanced.png" alt="Quentinha de picanha" />
+            <div class="product-info"><p class="product-tag">CORTE ESPECIAL</p><h3>Quentinha<br />Picanha</h3><p>Picanha e acompanhamentos do dia.</p><div><strong>R$ 70,00</strong><button type="button" data-add data-product-id="picanha" data-product-name="Quentinha - Picanha" data-product-price="70">Adicionar <span>+</span></button></div></div>
+          </article>
+          <article class="product-card">
+            <img src="assets/silvio-almoco-familia-original.png" alt="Quentinha grande de carne de boi" />
+            <div class="product-info"><p class="product-tag">TAMANHO G</p><h3>Quentinha G<br />Carne de Boi</h3><p>Carne de boi e acompanhamentos do dia.</p><div><strong>R$ 50,00</strong><button type="button" data-add data-product-id="boi-g" data-product-name="Quentinha G - Carne de Boi" data-product-price="50">Adicionar <span>+</span></button></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="menu-delivery-note"><div><p class="eyebrow">PEDIDO ORGANIZADO</p><h2>Da escolha<br />até a entrega.</h2></div><p>Na versão final, disponibilidade, complementos, endereço, pagamento e confirmação podem ser gerenciados em um painel para a equipe.</p></section>
+    </main>
+
+    <aside class="cart-drawer" id="cart-drawer" aria-label="Carrinho de compras" aria-hidden="true">
+      <div class="cart-head"><div><p class="eyebrow">SEU PEDIDO</p><h2>Meu carrinho</h2></div><button class="cart-close" type="button" data-cart-close aria-label="Fechar carrinho">×</button></div>
+      <div class="cart-items" data-cart-items><p class="cart-empty">Seu carrinho está vazio.<br />Escolha uma quentinha para começar.</p></div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Subtotal</span><strong data-cart-subtotal>R$ 0,00</strong></div>
+        <button class="button button-primary cart-checkout" data-open-checkout type="button" disabled>Continuar pedido <span>→</span></button>
+        <small>Valores e itens são demonstrativos nesta prévia.</small>
+      </div>
+    </aside>
+    <div class="cart-backdrop" data-cart-close></div>
+    <button class="mobile-cart-trigger" type="button" data-cart-toggle aria-controls="cart-drawer" aria-expanded="false"><span>⌑</span> Carrinho <b data-cart-total-count>0</b></button>
+
+    <dialog class="checkout-modal" aria-labelledby="checkout-title">
+      <button class="modal-close" type="button" data-checkout-close aria-label="Fechar">×</button>
+      <div data-checkout-form>
+        <p class="eyebrow">QUASE LÁ</p><h2 id="checkout-title">Confirme seu pedido.</h2>
+        <p>O cliente termina tudo pelo site. Na versão final, esta etapa pode integrar pagamento e o painel da equipe.</p>
+        <form id="order-form">
+          <label>Seu nome<input required name="nome" placeholder="Como podemos te chamar?" /></label>
+          <label>Telefone para contato<input required name="telefone" inputmode="tel" placeholder="(79) 00000-0000" /></label>
+          <label>Como prefere receber?<span class="delivery-choice"><span><input checked type="radio" name="recebimento" value="Delivery" /> Delivery</span><span><input type="radio" name="recebimento" value="Retirada" /> Retirada</span></span></label>
+          <button class="button button-primary checkout-submit" type="submit">Confirmar pedido <span>→</span></button>
+        </form>
+      </div>
+      <div class="checkout-success" data-checkout-success hidden><p class="eyebrow">PEDIDO REGISTRADO</p><h2>Pronto.<br />A fome já sabe o caminho.</h2><p>Esta confirmação é demonstrativa. No site oficial, o pedido seria enviado para o painel ou para a forma de recebimento escolhida.</p><button class="button button-primary" data-checkout-close type="button">Voltar ao cardápio <span>→</span></button></div>
+    </dialog>
+
+    <footer><a class="brand footer-brand" href="index.html"><span class="brand-mark"><img src="assets/silvio-logo.png" alt="" /></span><span class="brand-text"><strong>COMIDA CASEIRA</strong><small>DO SÍLVIO • ARACAJU</small></span></a><p>PRÉVIA CONCEITUAL NÃO OFICIAL<br />CARDÁPIO COM PEDIDO PELO SITE</p><a href="index.html">VOLTAR À PÁGINA INICIAL ←</a></footer>
+    <a class="whatsapp-float" href="https://wa.me/5579981131906" target="_blank" rel="noreferrer" aria-label="Abrir WhatsApp"><span>⌕</span><b>Falar no WhatsApp</b></a>
+    <script src="cardapio.js"></script>
+  </body>
+</html>
