@@ -35,8 +35,8 @@
 .line-one { height:1px; width:46%; right:9%; top:91px; }.line-two { width:1px; height:33%; right:1%; bottom:1%; background:#cf4533; }
 .hero-note,.scroll-note { z-index:5; }
 .card-grill { background:linear-gradient(0deg,rgba(5,22,36,.93),rgba(5,22,36,.08)),url("assets/silvio-picanha-1-enhanced.png") center/cover; }
-.card-quentinha { background:linear-gradient(0deg,rgba(5,22,36,.86),rgba(5,22,36,.05)),url("assets/silvio-quentinha-restaurada.png") center/cover; }
-.card-house { background:linear-gradient(0deg,rgba(5,22,36,.86),rgba(5,22,36,.05)),url("assets/silvio-almoco-familia-restaurado.png") center/cover; }
+.card-quentinha { background-color:#0d2235; background-image:linear-gradient(0deg,rgba(5,22,36,.92),rgba(5,22,36,.04) 74%),url("assets/silvio-quentinha-original.png"); background-position:center,center top; background-repeat:no-repeat; background-size:cover,100% auto; }
+.card-house { background-color:#0d2235; background-image:linear-gradient(0deg,rgba(5,22,36,.92),rgba(5,22,36,.04) 74%),url("assets/silvio-almoco-familia-original.png"); background-position:center,center top; background-repeat:no-repeat; background-size:cover,100% auto; }
 .card-house:after { display:none; }
 .order-modal { max-height:min(760px,calc(100vh - 30px)); overflow:auto; }
 .order-step { display:none; }.order-step.active { display:block; }
